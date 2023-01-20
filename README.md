@@ -1,4 +1,4 @@
-# CIS106_ThomasLam
+# CIS106 ThomasLam
 
 ## Assignment 1
 
