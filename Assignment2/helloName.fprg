@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Tom"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-25 04:34:47 PM"/>
+        <attribute name="created" value="VG9tO05FRDsyMDIzLTAxLTI1OzAyOjQ2OjE0IFBNOzE3OTU="/>
+        <attribute name="edited" value="VG9tO05FRDsyMDIzLTAxLTI1OzA0OjM0OjQ3IFBNOzc7MTkxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="The program is supposed to output &quot;Hello Thomas!&quot;. I can use a string variable and just have the output be the string."/>
+            <declare name="name" type="String" array="False" size=""/>
+            <assign variable="name" expression="&quot;Thomas&quot;"/>
+            <output expression="&quot;Hello &quot; &amp; name &amp; &quot;!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
