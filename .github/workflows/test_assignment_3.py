@@ -672,6 +672,14 @@ def test_assignment_3_activity_2_months_output():
         "months output label is missing or incorrect. "
             "Include output label on same line as result.")
 
+    test.check_source_code_output(
+        "Assignment 3",
+        "Activity 2",
+        "",
+        "2\n",
+        "24",
+        "months calculation output is incorrect.")
+
 
 def test_assignment_3_activity_2_days_output():
     test.check_source_code_output(
