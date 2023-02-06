@@ -10,6 +10,8 @@ I learned a lot about programming languages in this session. The most striking t
 
 ## Assignment 3
 
+This session, I relearned some python fundamentals. I learned how to take user inputs and store them into variables of certain data types. Knowing the basics of programming is an important foundation for computer science majors. These skills will be expanded and built upon in my later academic and career goals. I'm not completely sure what specific subfield of computer science I'd like to pursue, but artificial intelligence has always intrigued me. Maybe in the future I will use the skills I've developed in python and use them to create bigger and more complex programs that deal with replicating real conciousness. That's not for a couple years at least, but in the near future I'll take more advanced computer science classes where I'll be expected to have the basics of programming. That's really what I've learned during this sessions.
+
 ## Assignment 4
 
 ## Assignment 5
