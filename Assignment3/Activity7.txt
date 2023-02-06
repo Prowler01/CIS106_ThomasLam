@@ -1,12 +1,14 @@
+This program calculates a dog's age in dog years.
+
 Input:
 	Display prompt
-	> Get dog's name
+	Get dog's name
 	
 	Display prompt
-	> Get dog's age in human years 
+	Get dog's age in human years 
 	
 Process:
     Convert dog's age in human years to dog years
 
 Output:
-    Display dog's age in dog years.
+    Display dog's name and age in dog years.
