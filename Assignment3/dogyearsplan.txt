@@ -1,0 +1,12 @@
+Input:
+	Display prompt
+	> Get dog's name
+	
+	Display prompt
+	> Get dog's age in human years 
+	
+Process:
+    Convert dog's age in human years to dog years
+
+Output:
+    Display dog's age in dog years.
