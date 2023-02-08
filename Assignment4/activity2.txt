@@ -2,7 +2,7 @@ This program takes an input user age and converts it into approximate age in mon
 
 Input:
     Display prompt
-    Get user age
+    Get user age in years
 
 Process:
     Convert age in years to months
