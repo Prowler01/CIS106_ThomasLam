@@ -1,0 +1,15 @@
+This program converts an input user age and converts it into approximate age in months, days, hours, and seconds. 
+
+Input:
+    Display prompt
+    Get user age
+Process:
+    Convert age in years to months
+	Convert age in years to days
+	Convert age in years to hours
+	Convert age in years to seconds
+Output:
+    Display age in months
+	Display age in days
+	Display age in hours
+	Display age in seconds
