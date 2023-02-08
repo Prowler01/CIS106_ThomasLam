@@ -14,5 +14,7 @@ This session, I relearned some Python fundamentals. I learned how to take user i
 
 ## Assignment 4
 
+In this session I learned about the process of programming. This process involves a lot of debugging, editing, and testing. Although the program may seem simple at first glance, there's many nuances that may prevent it from being perfect. I learned this through submitting my assignment and resubmitting it a couple times to get it completely right. I also took a new approach this week by getting ahead in the course and meeting with the Professor. I've learned that sometimes all you need is a bit of guidance and it's in my best interest to seek that guidance if it leads to my success. Asking questions, being open to being wrong, and open to critique is an invaluable part of learning. This lesson will come up again in my academic future and career future.
+
 ## Assignment 5
 
