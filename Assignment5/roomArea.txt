@@ -1,0 +1,42 @@
+Main Program
+	Get Room Width
+	Get Room Length
+    Calculate Room Area
+    Display Result
+
+Get Width
+    Parameters:
+        None
+    Process:
+        Display Prompt
+        Get Width in feet
+    Return Value:
+        Width
+
+Get Length
+    Parameters:
+        None
+    Process:
+        Display Prompt
+        Get Length in feet
+    Return Value:
+        Length
+
+Calculate Room Area
+    Parameters:
+        Width
+	Length
+    Process:
+        Calculate room area in feet
+	Convert square feet to square yards
+    Return Value:
+        Room area in square yards
+
+Display Result
+    Parameters:
+        Width
+        Length
+    Process:
+        Display Room area in square yards
+    Return Value:
+        None
