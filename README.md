@@ -18,3 +18,7 @@ In this session I learned about the process of programming. This process involve
 
 ## Assignment 5
 
+## Assignment 6
+
+## Assignment 7
+
