@@ -4,9 +4,10 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Tom"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2023-02-16 11:24:42 PM"/>
+        <attribute name="saved" value="2023-02-17 07:22:49 AM"/>
         <attribute name="created" value="VG9tO05FRDsyMDIzLTAyLTE2OzEwOjU0OjQzIFBNOzE3OTY="/>
         <attribute name="edited" value="VG9tO05FRDsyMDIzLTAyLTE2OzExOjI0OjQyIFBNOzIyOzE5NTI="/>
+        <attribute name="edited" value="ZGF2ZWJyYXVuc2Nod2VpZztXSU5ET1dTMTE7MjAyMy0wMi0xNzswNzoyMjo0OSBBTTsxOzM3Mjk="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -18,8 +19,8 @@
             <declare name="areaFeet" type="Real" array="False" size=""/>
             <declare name="area" type="Real" array="False" size=""/>
             <declare name="areaYards" type="Real" array="False" size=""/>
-            <assign variable="width" expression="getWidth()"/>
             <assign variable="length" expression="getLength()"/>
+            <assign variable="width" expression="getWidth()"/>
             <assign variable="area" expression="calculateArea(width, length)"/>
             <assign variable="areaYards" expression="calculateSquareYards(area)"/>
             <call expression="DisplayResult(area, areaYards, width, length)"/>
