@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Tom"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-16 11:12:55 PM"/>
+        <attribute name="created" value="VG9tO05FRDsyMDIzLTAyLTE2OzEwOjU0OjQzIFBNOzE3OTY="/>
+        <attribute name="edited" value="VG9tO05FRDsyMDIzLTAyLTE2OzExOjEyOjU1IFBNOzE4OzE5NTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program prompts the user for width and length of a room. It then uses these 2 variables to calculate surface area."/>
+            <declare name="width" type="Real" array="False" size=""/>
+            <declare name="length" type="Real" array="False" size=""/>
+            <declare name="areaFeet" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="areaYards" type="Real" array="False" size=""/>
+            <assign variable="width" expression="getWidth()"/>
+            <assign variable="length" expression="getLength()"/>
+            <assign variable="area" expression="calculateArea(width, length)"/>
+            <assign variable="areaYards" expression="calculateSquareYards(area)"/>
+            <call expression="DisplayResult(area, areaYards)"/>
+        </body>
+    </function>
+    <function name="calculateArea" type="Real" variable="areaFeet">
+        <parameters>
+            <parameter name="width" type="Real" array="False"/>
+            <parameter name="length" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="areaFeet" type="Real" array="False" size=""/>
+            <assign variable="areaFeet" expression="width * length"/>
+        </body>
+    </function>
+    <function name="calculateSquareYards" type="Real" variable="areaYards">
+        <parameters>
+            <parameter name="area" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="areaYards" type="Real" array="False" size=""/>
+            <assign variable="areaYards" expression="area / 9"/>
+        </body>
+    </function>
+    <function name="DisplayResult" type="None" variable="">
+        <parameters>
+            <parameter name="area" type="Real" array="False"/>
+            <parameter name="areaYards" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;Total area in square feet: &quot; &amp; area" newline="True"/>
+            <output expression="&quot;Total area in square yards: &quot; &amp; areaYards" newline="True"/>
+        </body>
+    </function>
+    <function name="getLength" type="Real" variable="length">
+        <parameters/>
+        <body>
+            <declare name="length" type="Real" array="False" size=""/>
+            <output expression="&quot;Length (in feet): &quot;" newline="True"/>
+            <input variable="length"/>
+        </body>
+    </function>
+    <function name="getWidth" type="Real" variable="width">
+        <parameters/>
+        <body>
+            <declare name="width" type="Real" array="False" size=""/>
+            <output expression="&quot;Width (in feet): &quot;" newline="True"/>
+            <input variable="width"/>
+        </body>
+    </function>
+</flowgorithm>
