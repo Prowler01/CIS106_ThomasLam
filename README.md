@@ -18,6 +18,8 @@ In this session I learned about the process of programming. This process involve
 
 ## Assignment 5
 
+This week we were introduced to functions which added a learning curve for me. I was able to refer the the text book to see how to write the Flowgorithm program using functions. This chapter taught me a lot about how programming larger programs will look. Larger programs will implement the use of functions to categorize specific tasks. The introduction of functions will prepare me for later in my academic career when more complex programs become the subject of my coursework. If I'm developing a piece of software that aims to gather a large amount of user-data and interpret that data, I will without a doubt want to use functions to better organize my code.
+
 ## Assignment 6
 
 ## Assignment 7
