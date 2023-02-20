@@ -1,0 +1,47 @@
+Main Program
+	Get hours
+	Get rate
+    Calculate Pay
+    Display Result
+
+Get hours
+    Parameters:
+        None
+    Process:
+        Display Prompt
+        Get hours worked
+    Return Value:
+        hours
+
+Get rate
+    Parameters:
+        None
+    Process:
+        Display Prompt
+        Get rate in dollars
+    Return Value:
+        rate
+
+Calculate pay
+    Parameters:
+        hours
+	rate
+    Process:
+        Calculate weekly pay
+	Calculate monthly pay
+	Calculate annual pay
+    Return Value:
+        weeklyPay
+	monthlyPay
+	annuelPay
+
+Display Result
+    Parameters:
+        hours
+        rate
+    Process:
+        Display weeklyPay
+	Display monthlyPay
+	Display annualPay
+    Return Value:
+        None
