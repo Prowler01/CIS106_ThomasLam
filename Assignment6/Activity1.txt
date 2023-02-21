@@ -1,7 +1,11 @@
+Overview goes here ...
+
 Main Program
 	Get hours
 	Get rate
-    Calculate Pay
+    Calculate Weekly Pay
+    Calculate Monthly Pay
+    Calculate Annual Pay
     Display Result
 
 Get hours
@@ -22,26 +26,41 @@ Get rate
     Return Value:
         rate
 
-Calculate pay
+Calculate weekly pay
     Parameters:
         hours
-	rate
+    	rate
     Process:
         Calculate weekly pay
-	Calculate monthly pay
-	Calculate annual pay
     Return Value:
         weeklyPay
-	monthlyPay
-	annuelPay
+
+Calculate monthly pay
+    Parameters:
+        hours
+	    rate
+    Process:
+    	Calculate monthly pay
+	Return Value:
+        monthlyPay
+	
+Calculate annual pay
+    Parameters:
+        hours
+	    rate
+    Process:
+        Calculate annual pay
+    Return Value:
+    	annual pay
 
 Display Result
     Parameters:
-        hours
-        rate
+        Weekly pay
+        Monthly pay
+        Annual pay
     Process:
         Display weeklyPay
-	Display monthlyPay
-	Display annualPay
+    	Display monthlyPay
+	    Display annualPay
     Return Value:
         None
