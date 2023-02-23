@@ -36,8 +36,6 @@ def calculate_annual(pay, hours):
 
 
 def display_result(pay, hours, weekly, monthly, annual):
-    print("You make $" + str(pay) + " an hour.")
-    print("You work $" + str(hours) + " hours a week.")
     print("You make $" + str(weekly) + " a week.")
     print("You make $" + str(monthly) + " a month.")
     print("You make $" + str(annual) + " a year")
