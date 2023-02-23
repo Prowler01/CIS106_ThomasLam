@@ -6,13 +6,13 @@
 
 
 def get_pay():
-    print("Enter hourly pay: ")
+    print("Rate: ")
     pay = float(input())
     return pay
 
 
 def get_hours():
-    print("Enter hours worked per week: ")
+    print("Hours: ")
     hours = float(input())
     return hours
 
