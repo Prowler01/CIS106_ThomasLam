@@ -5,37 +5,37 @@
 # program plan
 
 
-def getPay():
+def get_pay():
     print("Enter hourly pay: ")
     pay = float(input())
     return pay
 
 
-def getHours():
+def get_hours():
     print("Enter hours worked per week: ")
     hours = float(input())
     return hours
 
 
-def calculateWeekly(pay, hours):
+def calculate_weekly(pay, hours):
     weekly = pay * hours
     return weekly
 
 
-def calculateMonthly(pay, hours):
+def calculate_monthly(pay, hours):
     weekly = pay * hours
     monthly = weekly * 4
     return monthly
 
 
-def calculateAnnual(pay, hours):
+def calculate_annual(pay, hours):
     weekly = pay * hours
     monthly = weekly * 4
     annual = monthly * 12
     return annual
 
 
-def displayResult(pay, hours, weekly, monthly, annual):
+def display_result(pay, hours, weekly, monthly, annual):
     print("You make $" + str(pay) + " an hour.")
     print("You work $" + str(hours) + " hours a week.")
     print("You make $" + str(weekly) + " a week.")
@@ -44,12 +44,12 @@ def displayResult(pay, hours, weekly, monthly, annual):
 
 
 def main():
-    pay = getPay()
-    hours = getHours()
-    weekly = calculateWeekly(pay, hours)
-    monthly = calculateMonthly(pay, hours)
-    annual = calculateAnnual(pay, hours)
-    displayResult(pay, hours, weekly, monthly, annual)
+    pay = get_pay()
+    hours = get_hours()
+    weekly = calculate_weekly(pay, hours)
+    monthly = calculate_monthly(pay, hours)
+    annual = calculate_annual(pay, hours)
+    display_result(pay, hours, weekly, monthly, annual)
 
 
 main()
