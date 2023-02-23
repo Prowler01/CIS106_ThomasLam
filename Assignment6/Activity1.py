@@ -41,8 +41,8 @@ def display_result(rate, hours, weekly, monthly, annual):
 
 
 def main():
-    rate = get_rate()
     hours = get_hours()
+    rate = get_rate()
     weekly = calculate_weekly(rate, hours)
     monthly = calculate_monthly(rate, hours)
     annual = calculate_annual(rate, hours)
