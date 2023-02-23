@@ -22,5 +22,7 @@ This week we were introduced to functions which added a learning curve for me. I
 
 ## Assignment 6
 
+In this session, I taught myself to program using functions in Python. It was definitely no simple task as functions can quickly become complicated. The individual functions, return values, user-inputs, parameters, calculations, "display result" module, and main function with all the function calls was a lot to manage. All the moving pieces had to be 100% perfect in order for the program to operate properly. This was the most challenging aspect of session 6. Given the complexity of the program, there is a multitude of spots where the compiler encounters an error. The development of a functioning program requires intensive comprehensive editing in order to ensure the program operates as intended. Any iteration of the program that isn't completely logically sound with perfect syntax is worthless. This is the most critical lesson I learned within this session. 
+
 ## Assignment 7
 
