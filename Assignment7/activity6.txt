@@ -1,0 +1,32 @@
+OVerview: This program determines the user's sock size based on their shoe size input
+
+Main Program
+    Get sock size
+    Calculate socksize
+    Display Result
+
+Get shoe_size
+    Parameters:
+        None
+    Process:
+        Display Prompt
+        Get shoesize
+    Return Value:
+        shoesize
+
+Calculate socksize
+    Parameters:
+        shoesize
+    Process:
+        Calculate socksize based on conditions
+    Return Value:
+        socksize
+
+Display Result
+    Parameters:
+        shoesize
+	socksize
+    Process:
+	Display_result
+    Return Value:
+        None
