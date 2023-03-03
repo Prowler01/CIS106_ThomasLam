@@ -12,7 +12,7 @@ def calculate_socksize(shoesize):
     if shoesize < 4:
         socksize = "Extra Small"
         return socksize
-    elif shoesize  < 6.1:
+    elif shoesize < 6.1:
         socksize = "Small"
         return socksize
     elif shoesize < 9:
@@ -27,7 +27,7 @@ def calculate_socksize(shoesize):
 
     
 def display_result(shoesize, socksize):
-        print("Socksize: " + str(socksize))
+    print("Socksize: " + str(socksize))
  
 
 def main():
