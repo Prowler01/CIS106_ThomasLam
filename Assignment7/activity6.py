@@ -4,7 +4,7 @@
 
 def get_shoesize():
     print("What is your shoe size: ")
-    shoesize = int(input())
+    shoesize = float(input())
     return shoesize
 
 
