@@ -27,3 +27,9 @@ In this session, I taught myself to program using functions in Python. It was de
 ## Assignment 7
 
 In this session, the program got a lot more complicated with the addition of conditions. This made the programs much more nuanced and difficult to navigate. But it was a great learning experience because being exposed to more involved programs will only help in developing my computer science abilities. I struggled with some of the logic in the conditions, but I was able to refer to the textbook and figure it out. The valuable part of this week for me was simply being tasked with more complicated programs. This will translate into my later academic career because the programs I will tackle later on in my life will definitely be more involved than just basic Python programs. The exposure to increasingly difficult programs will pay dividends in my academic and career journey.
+
+## Assignment 8
+
+## Assignment 9
+
+## Assignment 10
