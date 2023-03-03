@@ -25,13 +25,15 @@ def calculate_socksize(shoesize):
         socksize = "Extra Large"
         return socksize
 
+    
 def display_result(shoesize, socksize):
         print("Socksize: " + str(socksize))
-        
+ 
+
 def main():
-       shoesize = get_shoesize()
-       socksize = calculate_socksize(shoesize)
-       display_result(shoesize, socksize)
+    shoesize = get_shoesize()
+    socksize = calculate_socksize(shoesize)
+    display_result(shoesize, socksize)
 
     
 main()
