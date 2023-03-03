@@ -12,13 +12,13 @@ def calculate_socksize(shoesize):
     if shoesize < 4:
         socksize = "Extra Small"
         return socksize
-    elif shoesize < 6.1:
+    elif shoesize <= 6:
         socksize = "Small"
         return socksize
-    elif shoesize < 9:
+    elif shoesize <= 9:
         socksize = "Medium"
         return socksize
-    elif shoesize < 12:
+    elif shoesize <= 12:
         socksize = "Large"
         return socksize
     else:
