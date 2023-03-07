@@ -20,10 +20,10 @@ Get number_tests
 Get test_total_loop
 	Parameters: number_tests
 	Process: 
-		Get current score
-		Add current score to total score
-		Update total score
-		Run repeatedly for number of tests
+		Initialize total
+		Loop for number of tests
+			Get current score
+			Add current score to total score
 	Return
 		total_score
 
@@ -44,4 +44,3 @@ Display Result
 		Print average grade
 	Return:
 		Nothing
-	
