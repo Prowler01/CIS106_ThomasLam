@@ -1,0 +1,47 @@
+Overview: This program calculates a student's average testscore
+Overview: The program takes user input for number of testscores
+Overview: Then calculates the average 
+
+Main program:
+	Get number_tests
+	Get test_total
+	Calculate average_score
+	Display Result
+
+Get number_tests
+	Parameters:
+		None
+	Process:
+		Display Prompt
+		Get number_tests
+	Return value:
+		number_tests
+
+Get test_total_loop
+	Parameters: number_tests
+	Process: 
+		Get current score
+		Add current score to total score
+		Update total score
+		Run repeatedly for number of tests
+	Return
+		total_score
+
+Calculate average
+	Parameters:
+		total_score
+		number_tests
+	Process
+		total_score / number_tests
+	Return
+		average
+
+Display Result
+	Parameters:
+		number_tests
+		total_score
+	Process:
+		Print average grade
+	Return:
+		Nothing
+	
