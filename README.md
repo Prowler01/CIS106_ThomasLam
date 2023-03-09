@@ -30,6 +30,8 @@ In this session, the program got a lot more complicated with the addition of con
 
 ## Assignment 8
 
+In this session, the focus was "for" loops. For loops proved to be more challenging than I had expected because I am used to using while loops/ repeat until loops. The difficult part was learning the syntax involved the for range() part. My program failed numerous times because of this specific block of code. I had to play around with the parameters and numbers involved in the loop. Eventually, I turned to Youtube to answer my questions. I ended up learning that the first parameter in the range() line is where the loop starts from (including the first number), the second number is when the loop stops iterating (including the second number), and the 3rd number is the increment by which the count increases.
+
 ## Assignment 9
 
 ## Assignment 10
