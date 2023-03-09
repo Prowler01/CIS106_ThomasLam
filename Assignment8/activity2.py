@@ -15,8 +15,7 @@ def get_total(num_tests):
     for count in range(1, num_tests + 1, 1):
         print("Testscore: ")
         testscore = int(input())
-        total = total + testscore
-        
+        total = total + testscore        
     return total
         
         
@@ -34,5 +33,6 @@ def main():
     total = get_total(num_tests)
     average = calculate_average(num_tests, total)
     display_result(average)
-    
+ 
+
 main()
