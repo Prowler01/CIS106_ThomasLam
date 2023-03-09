@@ -12,7 +12,7 @@ def get_numtests():
 def get_total(num_tests):
     total = 0
     count = 1
-    for count in range(1, num_tests +1, 1):
+    for count in range(1, num_tests + 1, 1):
         print("Testscore: ")
         testscore = int(input())
         total = total + testscore
