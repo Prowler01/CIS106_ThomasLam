@@ -1,15 +1,13 @@
-Overview: This program calculates a student's average testscore
-Overview: The program takes user input for number of testscores
-Overview: Then calculates the average
-Overview: This program runs repeatedly until the user wants to stop
+This program calculates a student's average testscore
+The program takes user input for number of testscores
+Then calculates the average
+This program runs repeatedly until the user wants to stop
 
 Main program:
 	Get number_tests
 	Get test_total
 	Calculate average_score
 	Display Result
-	Get continue
-	Get run_again
 
 Get number_tests
 	Parameters:
@@ -29,28 +27,6 @@ Get test_total_loop
 			Add current score to total score
 	Return
 		total_score
-
-Get get_continue:
-	Parameters:
-		None
-	Process:
-		Ask user if they want to run again
-		Get boolean continue
-	Return
-		boolean continue
-
-Get run_again
-	Parameters:
-		continue
-	Process: 
-		While continue = y
-			Re-run main program
-		Else:
-			Terminate program
-	Return:
-		average
-
-
 
 Calculate average
 	Parameters:
