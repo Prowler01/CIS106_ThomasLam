@@ -22,9 +22,11 @@ Get test_total_loop
 	Parameters: number_tests
 	Process: 
 		Initialize total
-		Loop for number of tests
+		Initialize count
+		While count < number of tests
 			Get current score
 			Add current score to total score
+			Increment count
 	Return
 		total_score
 
