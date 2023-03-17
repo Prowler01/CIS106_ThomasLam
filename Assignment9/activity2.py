@@ -1,36 +1,41 @@
 # This program calculates the student's average testscore
 # Using a while loop. The program takes the user's input score
 # And adds it to the total score every iteration
+
 # References: Program plan
 
-def get_num_tests():
-    print("How many test scores: ")
-    num_tests = int(input())
-    return num_tests
 
-def get_total(num_tests):
+def get_test_count():
+    print("How many test scores: ")
+    test_count = int(input())
+    return test_count
+
+
+def get_total(test_count):
     count = 1
     total = 0
-    while count <= num_tests:
-        print("Testscore " + str(count) + ": ")
+    while count <= test_count:
+        print("Test score " + str(count) + ": ")
         testscore = int(input())
         total = total + testscore
-        print("Total: " + str(total))
         count = count + 1
     return total
 
-def calcualte_average(num_tests, total):
-    average = float(total / num_tests)
+
+def calcualte_average(test_count, total):
+    average = float(total / test_count)
     return average
 
-def display_result(average):
-    print("Average testscore: " + str(average))
-    
-def main():
-    num_tests = get_num_tests()
-    total = get_total(num_tests)
-    average = calcualte_average(num_tests, total)
-    display_result(average)
-    
-main()
 
+def display_result(average):
+    print("Average test score: " + str(average))
+    
+
+def main():
+    test_count = get_test_count()
+    total = get_total(test_count)
+    average = calcualte_average(test_count, total)
+    display_result(average)
+
+
+main()
