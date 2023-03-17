@@ -22,7 +22,7 @@ def get_total(test_count):
     return total
 
 
-def calcualte_average(test_count, total):
+def calculate_average(test_count, total):
     average = float(total / test_count)
     return average
 
@@ -34,7 +34,7 @@ def display_result(average):
 def main():
     test_count = get_test_count()
     total = get_total(test_count)
-    average = calcualte_average(test_count, total)
+    average = calculate_average(test_count, total)
     display_result(average)
 
 
