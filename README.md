@@ -34,4 +34,6 @@ In this session, the focus was "for" loops. For loops proved to be more challeng
 
 ## Assignment 9
 
+In this session, I continued to explore loops in Python with an emphasis on while loops. I learned that they are very similar to "for" loops which we worked on previously. The application is relatively similar and a bit easier to implement. Overall, this session was incredibly beneficial to my future academic and career endeavors. The most useful aspect of this session was the opportunity to further develop my self-teaching ability as well as my coding ability. I've reached a point in this semester where I feel confident teaching myself how to code in Python using just the textbook, online resources, and a little bit of guidance. This constructivist style of teaching is beginning to work out for me.
+
 ## Assignment 10
