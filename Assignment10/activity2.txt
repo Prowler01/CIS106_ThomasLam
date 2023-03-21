@@ -4,45 +4,36 @@ Using a do loop that guesses teh number
 Based on midpoints
 
 Main program:
-	Get user_number
-	Get equality
-	Get computer_guess
+	Play game
 	Display result
-
-Get user_num
-	Parameters:
-		None
-	Process:
-		Display prompt
-		Get user_num
-	Return:
-		user_num
 
 Get equality
 	Parameters:
-		None
+		Guess
 	Process:
-		Display prompt
+		Display guess
 		Get equality (higher/ lower/ equal)
 	Return:
 		equality
 
-Get computer guess
+Play game
 	Parameter:
-		equality
+		None
 	Process:
-		count = 1
-		midpoint = 50
-		while equality =/= E:
-			print: Is your number higher or lower than +  midpoint
+		count = 0
+		low = 0
+		high = 100
+		loop
+			guess = midpoint
+			count = count + 1
+			get equality
 			if equality = higher
-				midpoint = midpoint + (midpoint /2 )
-				count = count + 1
+				low = midpoint + 1
 			if equality = lower
-				midpoint = midpoint + (midpoint /2 )
-				count = count + 1
+				high = midpoint - 1
 			if equality = equal
 				end loop, return count
+		while equality =/= E:
 	Return:
 		count
 
@@ -50,5 +41,3 @@ Display result
 	Parameters: count
 	Process: print count
 	return nothing
-	
-			
