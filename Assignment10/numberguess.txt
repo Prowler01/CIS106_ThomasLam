@@ -1,0 +1,54 @@
+The user enters a number betwen 0-100
+The program tries to guess that number
+Using a do loop that guesses teh number
+Based on midpoints
+
+Main program:
+	Get user_number
+	Get equality
+	Get computer_guess
+	Display result
+
+Get user_num
+	Parameters:
+		None
+	Process:
+		Display prompt
+		Get user_num
+	Return:
+		user_num
+
+Get equality
+	Parameters:
+		None
+	Process:
+		Display prompt
+		Get equality (higher/ lower/ equal)
+	Return:
+		equality
+
+Get computer guess
+	Parameter:
+		equality
+	Process:
+		count = 1
+		midpoint = 50
+		while equality =/= E:
+			print: Is your number higher or lower than +  midpoint
+			if equality = higher
+				midpoint = midpoint + (midpoint /2 )
+				count = count + 1
+			if equality = lower
+				midpoint = midpoint + (midpoint /2 )
+				count = count + 1
+			if equality = equal
+				end loop, return count
+	Return:
+		count
+
+Display result
+	Parameters: count
+	Process: print count
+	return nothing
+	
+			
