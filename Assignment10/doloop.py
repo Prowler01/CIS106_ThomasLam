@@ -1,7 +1,7 @@
 # This program takes user test scores and adds it to the total
 # The program repeats until the user says stop
 # Then the program spits out the average test score
-# References: w3schools
+# References: w3schools, programiz.com
 
 def get_score():
     print("Testscore: ")
