@@ -37,3 +37,19 @@ In this session, the focus was "for" loops. For loops proved to be more challeng
 In this session, I continued to explore loops in Python with an emphasis on while loops. I learned that they are very similar to "for" loops which we worked on previously. The application is relatively similar and a bit easier to implement. Overall, this session was incredibly beneficial to my future academic and career endeavors. The most useful aspect of this session was the opportunity to further develop my self-teaching ability as well as my coding ability. I've reached a point in this semester where I feel confident teaching myself how to code in Python using just the textbook, online resources, and a little bit of guidance. This constructivist style of teaching is beginning to work out for me.
 
 ## Assignment 10
+
+This session was once again, the hardest week yet. Do loops are the most confusing for me out of all 3 types of programming loops. The activity that I elected to tackle required returning 2 values which was confusing for me at first, but with a bit of playing around, I was able to figure it out. I looked to online resources and decided that using a list as my return value was the best way. This week was a great learning lesson for me because it took me outside of my comfort zone and forced me to teach myself something I didn't learn from the course material. My problem solving skills as a programmer were tested and I have grown from this experience.
+
+## Assigment 11
+
+## Assigment 12
+
+## Assigment 13
+
+## Assigment 14
+
+## Assigment 15
+
+
+
+
