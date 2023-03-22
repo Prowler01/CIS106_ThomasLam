@@ -1,0 +1,43 @@
+# This program takes user scores until the user
+# enters a negative, the program then calculates 
+# the average of all testscores entered
+
+Main program:
+	Get user score
+	Play game
+	Calculate average
+	Display result
+
+Get score
+	Parameters: none
+	Process:
+		Display prompt
+		Get score
+	Return:
+		score
+
+Play game:
+	Parameters: score
+	Process: 
+		count = 0
+		total = 0
+		Loop while score > 0:
+			Add score to total
+			Get new score
+			count + 1
+	Return 
+		count
+		total
+
+Calculuate average:
+	Parameter: count, total
+	Process: average = total / count
+	Return: average
+
+Display result:
+	Parameter: average
+	Process: print average
+	Return nothing
+
+
+			 
