@@ -3,9 +3,7 @@
 # the average of all testscores entered
 
 Main program:
-	Get user score
-	Play game
-	Calculate average
+	Get scores average
 	Display result
 
 Get score
@@ -16,18 +14,20 @@ Get score
 	Return:
 		score
 
-Play game:
+Get scores average:
 	Parameters: score
 	Process: 
 		count = 0
 		total = 0
-		Loop while score > 0:
-			Add score to total
+		Loop:
 			Get new score
-			count + 1
-	Return 
-		count
-		total
+			if score >= 0:
+				Add score to total
+				count + 1
+			While score >= 0
+		Calculate average
+	Return
+		Average
 
 Calculuate average:
 	Parameter: count, total
@@ -38,6 +38,3 @@ Display result:
 	Parameter: average
 	Process: print average
 	Return nothing
-
-
-			 
