@@ -8,6 +8,7 @@ def get_score():
     score = float(input())
     return score
 
+
 def get_scores_average():
     total = 0
     count = 0
@@ -15,19 +16,19 @@ def get_scores_average():
         score = get_score()
         if score < 0:
             break
-        count = count +1
+        count = count + 1
         total = total + score
         
     average = total / count
     return average
         
-        
-    
+            
 def display_result(average):
     print("Average testscore: " + str(average))
     
 def main():
-   average = get_scores_average()
-   display_result(average)
+    average = get_scores_average()
+    display_result(average)
+
     
 main()
