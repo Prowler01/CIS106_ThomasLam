@@ -15,7 +15,8 @@ Get score
 		score
 
 Get scores average:
-	Parameters: score
+	Parameters:
+		None
 	Process: 
 		count = 0
 		total = 0
