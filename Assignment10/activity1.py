@@ -25,6 +25,7 @@ def get_scores_average():
             
 def display_result(average):
     print("Average testscore: " + str(average))
+
     
 def main():
     average = get_scores_average()
