@@ -6,8 +6,6 @@ Main program:
 	Get year
 	Get month
 	Get day
-	Get k
-	Get j
 	Calculuate day_born
 	Convert to day_of_week
 	Display_result
@@ -28,24 +26,14 @@ Get day:
 	Process: Display and get
 	Return: day
 
-Get k:
-	Parameters: year
-	Process: Calculate k (year mod 100)
-	Return: k
-
-Get j:
-	Parameters: year
-	Process Calculate j (year/100)
-	Return: j
-
 Calculate day_born
 	Parameters:
 		year
 		month
 		day
-		k
-		j
 	Process:
+		Calculate k (year mod 100)
+		Calculate j (year/100)
 		Plug paramters into Zeller's congruence
 	Return: day_born
 
@@ -61,19 +49,3 @@ Display_result
 	Parameter: day_of_week
 	Process: print day_of_week
 	Return nothing
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
