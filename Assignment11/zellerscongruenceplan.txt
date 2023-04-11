@@ -1,0 +1,79 @@
+# This program takes the user's birthday in year, month, and day
+# Then uses Zeller's Congruence to calculate the day of the week
+# they were born
+
+Main program:
+	Get year
+	Get month
+	Get day
+	Get k
+	Get j
+	Calculuate day_born
+	Convert to day_of_week
+	Display_result
+
+Get year:
+	Parameters: none
+	Process:
+		Display and get
+	Return: year
+
+Get month:
+	Parameters: none
+	Process: Display and get
+	Return: month
+
+Get day:
+	Parameters: none
+	Process: Display and get
+	Return: day
+
+Get k:
+	Parameters: year
+	Process: Calculate k (year mod 100)
+	Return: k
+
+Get j:
+	Parameters: year
+	Process Calculate j (year/100)
+	Return: j
+
+Calculate day_born
+	Parameters:
+		year
+		month
+		day
+		k
+		j
+	Process:
+		Plug paramters into Zeller's congruence
+	Return: day_born
+
+Convert to string
+	Parameter: day_born
+	Process:
+		Create array
+		Use arary lookup
+	Return:
+		day_of_week
+
+Display_result
+	Parameter: day_of_week
+	Process: print day_of_week
+	Return nothing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
