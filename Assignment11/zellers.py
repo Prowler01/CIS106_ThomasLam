@@ -1,7 +1,7 @@
 # This program takes the user's input for year and month
 # Then looks up the corresponding month and number of days
 # Program runs until user enters an invalid input
-# References: Wikipedia, Textbook, geeksforgeeks.com
+# References: Wikipedia, Textbook, geeksforgeeks.com, Professor
 
 def get_year():
     print("What year were you born: ")
@@ -18,20 +18,9 @@ def get_day():
     day = int(input())
     return day
 
-def get_k(year):
+def calculate_day_born(year, month, day):
     k = year % 100
-    return k
-
-def get_j(year):
     j = year / 100
-    return j
-
-def calculate_day(year, month, day, j, k):
-    year = get_year()
-    month = get_month()
-    day = get_day()
-    j = get_j()
-    k = get_k()
     term1 = day
     term2 = ((month + 1) * 13) / 5
     term3 = k
@@ -43,24 +32,20 @@ def calculate_day(year, month, day, j, k):
     weekday = int(weekday)
     return weekday
 
-def convert_weekday(weekday):
-    weekday = calculate_day(year, month, day, j, k)
+def convert_string(weekday):
     days = ["Saturday","Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     day_of_week = days[weekday]
     return day_of_week
 
-def display_result(weekday, day_of_week):
-    #print("Result: " + str(weekday))
+def display_result(day_of_week):
     print("You were born on a " + day_of_week + ".")
 
 def main():
     year = get_year()
     month = get_month()
     day = get_day()
-    j = get_j(year)
-    k = get_k(year)
-    weekday = calculate_day(year, month, day, j, k)
-    day_of_week = convert_weekday(weekday)
-    display_result(weekday, day_of_week)
+    weekday = calculate_day_born(year, month, day)
+    day_of_week = convert_string(weekday)
+    display_result(day_of_week)
     
 main()
