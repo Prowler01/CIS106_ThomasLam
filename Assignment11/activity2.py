@@ -8,15 +8,18 @@ def get_year():
     year = int(input())
     return year
 
+
 def get_month():
     print("What month were you born: ")
     month = int(input())
     return month
 
+
 def get_day():
     print("What day were you born: ")
     day = int(input())
     return day
+
 
 def calculate_day_born(year, month, day):
     k = year % 100
@@ -32,14 +35,17 @@ def calculate_day_born(year, month, day):
     weekday = int(weekday)
     return weekday
 
+
 def convert_string(weekday):
     days = ["Saturday","Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     day_of_week = days[weekday]
     return day_of_week
 
+
 def display_result(day_of_week):
     print("You were born on a " + day_of_week + ".")
 
+    
 def main():
     year = get_year()
     month = get_month()
@@ -47,5 +53,6 @@ def main():
     weekday = calculate_day_born(year, month, day)
     day_of_week = convert_string(weekday)
     display_result(day_of_week)
+
     
 main()
