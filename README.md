@@ -42,6 +42,8 @@ This session was once again, the hardest week yet. Do loops are the most confusi
 
 ## Assignment 11
 
+This session was the hardest yet. This week was the first time I had to actually go back and re-read the chapters with an extreme level of attention to detail. I was confused about what an array look up was and resorted to internet sources, which I cited. The learning curve was overcome by paying extra close attention to my program plan. Admittedly, I didn't put much effort into previous program plans because I was able to finish the assignment without the program plan. This week I really thought long and hard about the structure of the program. The program plan proved to be more useful than I had thought. This will pay off in my academic and career because I will place a greater emphasis on meticulous planning moving forwards which will enable me to tackle larger and more complex tasks.
+
 ## Assignment 12
 
 ## Assignment 13
