@@ -37,7 +37,9 @@ def calculate_day_born(year, month, day):
 
 
 def convert_string(weekday):
-    days = ["Saturday","Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    days = ["Saturday", "Sunday", 
+            "Monday", "Tuesday", "Wednesday", 
+            "Thursday", "Friday"]
     day_of_week = days[weekday]
     return day_of_week
 
