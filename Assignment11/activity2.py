@@ -22,6 +22,9 @@ def get_day():
 
 
 def calculate_day_born(year, month, day):
+    if (month < 3):
+        month += 12
+        year -= 1
     num_k = year % 100
     num_j = year / 100
     term1 = day
