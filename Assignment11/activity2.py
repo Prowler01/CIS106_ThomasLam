@@ -22,14 +22,14 @@ def get_day():
 
 
 def calculate_day_born(year, month, day):
-    k = year % 100
-    j = year / 100
+    num_k = year % 100
+    num_j = year / 100
     term1 = day
     term2 = ((month + 1) * 13) / 5
-    term3 = k
-    term4 = k / 4
-    term5 = j / 4
-    term6 = 2 * j
+    term3 = num_k
+    term4 = num_k / 4
+    term5 = num_j / 4
+    term6 = 2 * num_j
     sum = term1 + term2 + term3 + term4 + term5 - term6
     weekday = sum % 7
     weekday = int(weekday)
