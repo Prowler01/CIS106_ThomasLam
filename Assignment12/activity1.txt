@@ -4,17 +4,26 @@
 # is entered, then the program displays the high, low, and average
 # scores entered.
 
+Main:
+	Get score_array
+	Calculate low
+	Calculate high
+	Calculate average
+	display_result
+		
 Get score
 	Parameters: none
 	Process: Display and get
 	Return score
 
 Get score_array
-	Parameters: score
+	Parameters: None
 	Process:
 		Create array
-		if score is negative, then break
-		Add score to array
+		Loop
+			Get score
+			if score is negative, then break
+			Add score to array
 	Return: array
 
 Calculate highest
@@ -44,12 +53,3 @@ Display Result
 	Parameters: highest, lowest, average
 	Process: Print statement with high, low, and average
 	Return: nothing
-
-Main: 
-	Get score
-	Add it to the array
-	Calculate low
-	Calculate high
-	Calculate average
-	display_result
-		
