@@ -17,7 +17,7 @@ def get_score_array():
     while True:
         score = get_score()
         if score < 0:
-# print("End program")
+    # print("End program")
             break
         array.append(score)
     return array
@@ -47,7 +47,7 @@ def calculate_average(array):
 def display_result(highest, lowest, average):
     print("Your lowest score is: " + str(highest))
     print("Your highest score is: " + str(lowest))
-    print("Your average score is: " + str(average) )
+    print("Your average score is: " + str(average))
 
     
 def main():
