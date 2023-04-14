@@ -3,6 +3,7 @@
 # and adds those test scores to a static array
 # The program then calculates the highest, lowest
 # and average test scores.
+# References: geeksforgeeks.org, w3schools, khanacademy
 
 def get_num_scores():
     print("How many testscores: ")
