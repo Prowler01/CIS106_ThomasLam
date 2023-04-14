@@ -54,9 +54,9 @@ def display_result(array):
 
     
 def display_result2(lowest, highest, average):
-    print("Lowest: " , lowest)
+    print("Lowest: ", lowest)
     print("Highest: ", highest)
-    print("Average: " , average)
+    print("Average: ", average)
 
     
 def main():
