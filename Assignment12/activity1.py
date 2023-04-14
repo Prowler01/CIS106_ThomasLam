@@ -17,7 +17,6 @@ def get_score_array():
     while True:
         score = get_score()
         if score < 0:
-    # print("End program")
             break
         array.append(score)
     return array
