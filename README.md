@@ -46,7 +46,7 @@ This session was the hardest yet. This week was the first time I had to actually
 
 ## Assignment 12
 
-The focus of this session was dynamic arrays, which is something I was completely unfamiliar with. I learned what a dynamic array was, how to implement one into a python program, and in what ways can they be useful. On a broader scale, I learned how to self-teach myself advanced programming concepts using previous assignments and internet resources. Much of my success in this session was derived from my referencing of assignments done in sessions 10 and 11. I've learned that programming and computer science as a whole is very similar to physics in that the concepts are built upon one another. Having a solid foundational knowledge of do-loops was extremely advantageous to the my success in building a program that implemented a dynamic array on top of a do-loop.
+The focus of this session was dynamic arrays, which is something I was completely unfamiliar with. I learned what a dynamic array was, how to implement one into a Python program, and in what ways can they be useful. On a broader scale, I learned how to self-teach myself advanced programming concepts using previous assignments and internet resources. Much of my success in this session was derived from my referencing of assignments done in sessions 10 and 11. I've learned that programming and computer science as a whole is very similar to physics in that the concepts are built upon one another. Having a solid foundational knowledge of do-loops was extremely advantageous to the my success in building a program that implemented a dynamic array on top of a do-loop.
 
 ## Assignment 13
 
