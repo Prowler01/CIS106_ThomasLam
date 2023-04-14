@@ -1,1 +1,67 @@
+# This program asks the user how many testscores
+# they would like to enter. The program then
+# uses a loop to add the scores to the array
+# Highest, lowest, and average score are calculated
+# The program uses a sort function to sort the scores
+# from highest to lowest
 
+Main:
+	Get score_array
+	Calculate low
+	Calculate high
+	Calculate average
+	display_result
+	Display sorted array
+		
+Get score
+	Parameters: none
+	Process: Display and get
+	Return score
+
+Get score_array
+	Parameters: None
+	Process:
+		Create array
+		Loop
+			Get score
+			if score is negative, then break
+			Add score to array
+	Return: array
+
+Calculate highest
+	Parameters: array
+	Process: 
+		Sort the array
+		highest = array[0]
+	Return: highest
+
+Calculate lowest
+	Parameters: array
+	Process: 
+		Sort array
+		lowest = array[array.length)
+	Return:
+		lowest
+
+Calculate average:
+	Parameters: array
+	Process:
+		Add all elements of array 
+		Divide by number of elements
+		average = sum / num_elements
+	Return average
+
+Sort array
+	Parameters: array
+	Process: Use sort function to sort array
+	Return: Return sorted array
+
+Display Result
+	Parameters: highest, lowest, average
+	Process: Print statement with high, low, and average
+	Return: nothing
+
+Display Sorted Array
+	Parameters: sorted array
+	Process: Display sorted array
+	Return: nothing
