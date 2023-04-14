@@ -11,25 +11,29 @@ def get_score():
     score = int(input())
     return score
 
+
 def get_score_array():
     array = []
     while True:
         score = get_score()
         if score < 0:
-            #print("End program")
+# print("End program")
             break
         array.append(score)
     return array
+
 
 def calculate_highest(array):
     array.sort()
     highest = array[0]
     return highest
 
+
 def calculate_lowest(array):
     array.sort
-    lowest = array[len(array)-1]
+    lowest = array[len(array) - 1]
     return lowest
+
 
 def calculate_average(array):
     sum = 0
@@ -39,16 +43,19 @@ def calculate_average(array):
     average = sum / num_elements
     return average
 
+
 def display_result(highest, lowest, average):
     print("Your lowest score is: " + str(highest))
     print("Your highest score is: " + str(lowest))
     print("Your average score is: " + str(average) )
 
+    
 def main():
     array = get_score_array()
     highest = calculate_highest(array)
     lowest = calculate_lowest(array)
     average = calculate_average(array)
     display_result(highest, lowest, average)
-    
+  
+
 main()
