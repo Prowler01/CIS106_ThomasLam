@@ -10,10 +10,12 @@ def get_num_scores():
     num_scores = int(input())
     return num_scores
 
+
 def get_scores():
     print("Testscore: ")
     score = int(input())
     return score
+
 
 def get_score_array(num_scores):
     array = [None] * num_scores
@@ -25,15 +27,18 @@ def get_score_array(num_scores):
             break
     return array
 
+
 def calculate_lowest(array):
     array.sort()
     lowest = array[0]
     return lowest
 
+
 def calculate_highest(array):
     array.sort()
     highest = array[len(array) - 1]
     return highest
+
 
 def calculate_average(array):
     sum = 0
@@ -43,14 +48,17 @@ def calculate_average(array):
     average = sum / num_elements
     return average
 
+
 def display_result(array):
     print(array)
 
+    
 def display_result2(lowest, highest, average):
     print("Lowest: " , lowest)
     print("Highest: ", highest)
     print("Average: " , average)
 
+    
 def main():
     num_scores = get_num_scores()
     array = get_score_array(num_scores)
@@ -60,5 +68,5 @@ def main():
     average = calculate_average(array)
     display_result2(lowest, highest, average)
     
+    
 main()
-         
