@@ -1,0 +1,55 @@
+# This program asks the user to enter grade scores
+# The scores are added to a dynamic array
+# The program accepts user input data until a negative value
+# is entered, then the program displays the high, low, and average
+# scores entered.
+
+Get score
+	Parameters: none
+	Process: Display and get
+	Return score
+
+Get score_array
+	Parameters: score
+	Process:
+		Create array
+		if score is negative, then break
+		Add score to array
+	Return: array
+
+Calculate highest
+	Parameters: array
+	Process: 
+		Sort the array
+		highest = array[0]
+	Return: highest
+
+Calculate lowest
+	Parameters: array
+	Process: 
+		Sort array
+		lowest = array[array.length)
+	Return:
+		lowest
+
+Calculate average:
+	Parameters: array
+	Process:
+		Add all elements of array 
+		Divide by number of elements
+		average = sum / num_elements
+	Return average
+
+Display Result
+	Parameters: highest, lowest, average
+	Process: Print statement with high, low, and average
+	Return: nothing
+
+Main: 
+	Get score
+	Add it to the array
+	Calculate low
+	Calculate high
+	Calculate average
+	display_result
+		
