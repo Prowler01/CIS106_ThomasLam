@@ -1,0 +1,50 @@
+# This program asks the user how many test scores
+# The program then takes that number of test scores
+# and adds those test scores to a static array
+# The program then calculates the highest, lowest
+# and average test scores.
+
+Main:
+	Get number of test scores
+	Get array
+	lowest = calculate lowest
+	highest = calculate highest
+	average = calculate average
+	Display result
+
+Get num_scores
+	Parameters: none
+	Process: display and get
+	Return: num_scores
+
+Get array of scores
+	Parameters: num_scores
+	Process:
+		Create static array with num_scores number of items
+		Use a loop to add scores to array
+		Stop looping once array is filled
+	Return: array
+
+Calculate lowest
+	Parameters: array
+	Process: 
+		Sort array
+		Find lowest value
+	Return: lowest
+
+Calculate highest:
+	Parameters: array
+	Process: sort array and find highest value
+	Return: highest
+
+Calculate average:
+	Parameters: array
+	Process:
+		Find sum of all items in array
+		Divide sum by length of array to find average
+	Return: average
+
+Display result:
+	Parameters: lowest, highest, average
+	Process: Display lowest, highest, and average values
+	Return: nothing 
