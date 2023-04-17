@@ -1,1 +1,38 @@
+# This programmer ges the user's first and last name
+# The first and last name is inputted as a single line
+# The program outputs the string in 
+# Lastname, Firstname Initial form
 
+Get name:
+	Parameters: none
+	Process: Display prompt and get
+	Return: full name
+
+Get last_name:
+	Parameters: full_name
+	Process: Use string function to get last name
+	Return: last_name
+
+Get first_name:
+	Parameters: full_name
+	Process: Use string function to get firstname initial
+	Return: firstname_initial
+
+Create name
+	Parameters: last_name, firstname_initial
+	Process: Create lastname, Firstname_initial
+		Include a trailing period
+	Return:
+		name2
+
+Display_result
+	Parameters: name2
+	Process: Display name2
+	Return: nothing
+
+Main:
+	Get name
+	Get last_name
+	Get first_name
+	Create name
+	Display_result
