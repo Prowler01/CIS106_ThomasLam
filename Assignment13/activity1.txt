@@ -3,6 +3,13 @@
 # The program outputs the string in 
 # Lastname, Firstname Initial form
 
+Main:
+	Get name
+	Get last_name
+	Get first_name
+	Create name
+	Display_result
+
 Get name:
 	Parameters: none
 	Process: Display prompt and get
@@ -29,10 +36,3 @@ Display_result
 	Parameters: name2
 	Process: Display name2
 	Return: nothing
-
-Main:
-	Get name
-	Get last_name
-	Get first_name
-	Create name
-	Display_result
