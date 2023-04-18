@@ -44,5 +44,6 @@ def main():
     first_letter = get_firstletter(full_name)
     name_string = create_string(last_name, first_letter)
     display_result(name_string)
-    
+ 
+
 main()
