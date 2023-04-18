@@ -3,16 +3,23 @@
 # The program outputs the string in 
 # Lastname, Firstname Initial form
 # References: tutorialswebsite.com, flexiple.com
-# Referenes: freecodecamp, geeksforgeeks, w3schools
+# References: freecodecamp, geeksforgeeks, w3schools
+# References: Wikiversity
 
 def get_name():
-    print("What's your fullname: ")
-    full_name = (input())
-    return full_name
+     print("What's your fullname: ")
+     full_name = (input())
+     index = full_name.find(" ")
+     if index == 0:
+         full_name = get_name()
+     return full_name
 
 
 def get_lastname(full_name):
     all_names = full_name.split()
+#    length = len(all_names)
+#    if length < 1:
+#        main()
     last_name = all_names[len(all_names) - 1]
     last_name = last_name.capitalize()
     return last_name
