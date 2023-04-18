@@ -19,7 +19,7 @@ def get_lastname(full_name):
 
 
 def get_firstletter(full_name):
-    all_names = full_name.split(" ")
+    all_names = full_name.split()
     first_name = all_names[0]
     first_letter = first_name[0]
     first_letter = first_letter.upper()
