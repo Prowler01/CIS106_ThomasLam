@@ -50,6 +50,8 @@ The focus of this session was dynamic arrays, which is something I was completel
 
 ## Assignment 13
 
+This session went over strings which was very interesting. I learned about about strings, how to manipulate them, and the different functions that can be implemented in Python to craft complex programs that involve strings. I learned a lot in this session that will be beneficial to my academic career. The biggest thing I learned in this session is that strings are lists of characters that can be manipulated in the same way a list is manipulated. This will translate into my academic future because it will enable me to tackle larger and more complex projects. The knowledge and skill I developed in this session will serve as a strong foundation to build upon for when I eventually get to stuff like software/ application development.
+
 ## Assignment 14
 
 ## Assignment 15
