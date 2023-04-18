@@ -11,7 +11,7 @@ def get_name():
      full_name = (input())
      index = full_name.find(" ")
      if index == 0:
-         full_name = get_name()
+          full_name = get_name()
      return full_name
 
 
