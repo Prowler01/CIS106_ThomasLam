@@ -27,6 +27,7 @@ def create_string(last_name, first_letter):
     name_string = " "
     name_string = last_name + ", "
     name_string += first_letter
+    name_string += "."
     return name_string
     
 
