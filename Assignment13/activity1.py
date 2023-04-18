@@ -10,11 +10,13 @@ def get_name():
     full_name = (input())
     return full_name
 
+
 def get_lastname(full_name):
     all_names = full_name.split()
-    last_name = all_names[len(all_names) -1]
+    last_name = all_names[len(all_names) - 1]
     last_name = last_name.capitalize()
     return last_name
+
 
 def get_firstletter(full_name):
     all_names = full_name.split(" ")
@@ -22,6 +24,7 @@ def get_firstletter(full_name):
     first_letter = first_name[0]
     first_letter = first_letter.upper()
     return first_letter
+
 
 def create_string(last_name, first_letter):
     name_string = " "
@@ -34,6 +37,7 @@ def create_string(last_name, first_letter):
 def display_result(name_string):
     print(name_string)
 
+    
 def main():
     full_name = get_name()
     last_name = get_lastname(full_name)
