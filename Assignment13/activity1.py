@@ -9,9 +9,13 @@
 def get_name():
     print("What's your fullname: ")
     full_name = (input())
-    index = full_name.find(" ")
-    if index == 0:
+    #new_name = full_name.split()
+    #first_word = new_name[0]
+    if full_name == " ":
         full_name = get_name()
+    index = full_name.find(" ")
+#    if index == 0:
+#        full_name = get_name()
     return full_name
 
 
