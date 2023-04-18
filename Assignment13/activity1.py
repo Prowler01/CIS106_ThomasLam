@@ -9,6 +9,8 @@
 def get_name():
     print("What's your fullname: ")
     full_name = (input())
+    if full_name == "":
+        full_name = get_name()
     if full_name == " ":
         full_name = get_name()
     return full_name
