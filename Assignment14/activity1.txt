@@ -1,1 +1,39 @@
+# This program reads a text file of scores
+# And builds an array of scores based on the file
+# The program then calculates the highest, lowest, and average scores
 
+Main:
+	Read scores
+	Calculate highest
+	Calculate lowest
+	Calculate average
+	Display Result
+
+Read scores:
+	Parameters: file
+	Process: 
+		Find scores
+		Add them to an array
+	Output: array of scores
+
+Calculate highest:
+	Parameters: array_scores
+	Process: Calculate highest using sort
+	Output: highest_score
+
+Calculate lowest:
+	Parameters: array_scores
+	Process: Calculate lowest using sort
+	Output: lowest_score
+
+Calculate average: 
+	Parameters: array_scores
+	Process: 
+		add up all values in array
+		then divide by array length
+	Output: average
+
+Display Result:
+	Parameters: highest, lowest, and average scores
+	Process: Print out statements with scores
+	Output: Nothing
