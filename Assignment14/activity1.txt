@@ -10,30 +10,45 @@ Main:
 	Display Result
 
 Read scores:
-	Parameters: file
-	Process: 
-		Find scores
-		Add them to an array
-	Output: array of scores
+	Parameters: 
+		filename
+	Process:
+		Initialize array
+		Loop
+			Find scores
+			Add them to an array
+	Return Value: 
+		array of scores
 
 Calculate highest:
-	Parameters: array_scores
-	Process: Calculate highest using sort
-	Output: highest_score
+	Parameters: 
+		array_scores
+	Process: 
+		Calculate highest using sort
+	Return Value: 
+		highest_score
 
 Calculate lowest:
-	Parameters: array_scores
-	Process: Calculate lowest using sort
-	Output: lowest_score
+	Parameters: 
+		array_scores
+	Process: 
+		Calculate lowest using sort
+	Return Value: 
+		lowest_score
 
 Calculate average: 
-	Parameters: array_scores
+	Parameters: 
+		array_scores
 	Process: 
 		add up all values in array
 		then divide by array length
-	Output: average
+	Return Value: 
+		average
 
 Display Result:
-	Parameters: highest, lowest, and average scores
-	Process: Print out statements with scores
-	Output: Nothing
+	Parameters: 
+		highest, lowest, and average scores
+	Process: 
+		Print out statements with scores
+	Return Value: 
+		Nothing
