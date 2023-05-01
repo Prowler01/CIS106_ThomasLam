@@ -2,8 +2,8 @@
 # References: askpython.com, textbook, Techwithtim on youtube
 # References: realpython.com, wikiversity, Professor
 
-import os
-import sys
+#import os
+#import sys
 
 
 def read_scores(filename):
