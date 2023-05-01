@@ -54,6 +54,8 @@ This session went over strings which was very interesting. I learned about about
 
 ## Assignment 14
 
+This session was by far the hardest for me both in terms of programming content and maneuvering through the structure of the course. In the end it was a valuable learning experience. Using data from an external text document in my Python program was very foreign to me and was a difficult learning curve. I was confused at where to begin until I met with the professor. In the end, the solution was simpler than I had made it out to be in my head. I will learn from this moving forwards because when I encounter an alien concept in my future academic career, I'll be ready to take the time and digest the material.
+
 ## Assignment 15
 
 ## Assignment 16
