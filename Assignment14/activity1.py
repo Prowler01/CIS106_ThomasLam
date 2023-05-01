@@ -5,6 +5,7 @@
 import os
 import sys
 
+
 def read_scores(filename):
     scores = []
     with open(filename, 'r') as file:
@@ -13,7 +14,8 @@ def read_scores(filename):
             name, score = line.strip().split(',')
             scores.append(int(score))
         return scores
-        
+    
+    
 def calculate_highest(scores):
     scores.sort()
     highest = scores[0]
