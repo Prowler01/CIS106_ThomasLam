@@ -18,9 +18,10 @@ def get_name():
 
 def get_lastname(full_name):
     all_names = full_name.split()
-#    length = len(all_names)
-#    if length < 1:
-#        main()
+    length = len(all_names)
+    if length < 2:
+        return ""
+
     last_name = all_names[len(all_names) - 1]
     last_name = last_name.capitalize()
     return last_name
@@ -28,6 +29,10 @@ def get_lastname(full_name):
 
 def get_first_letter(full_name):
     all_names = full_name.split()
+    length = len(all_names)
+    if length < 1:
+        return ""
+
     first_name = all_names[0]
     first_letter = first_name[0]
     first_letter = first_letter.upper()
