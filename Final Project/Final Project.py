@@ -1,15 +1,7 @@
-# This program reads data from a CD catalog data set
-# and builds arrays for the catalog items
-# Each array contains the title, artist, country, prie, and year
-# At the bottom, the total number of items and average price is 
-# displayed
-# References: datacamp.com
-
 import xml.etree.ElementTree as ET
 
-
-def parse_xml(filename):
-    tree = ET.parse(filename)
+def parse_xml_file(xml_file):
+    tree = ET.parse(xml_file)
     root = tree.getroot()
 
     titles = []
@@ -18,36 +10,35 @@ def parse_xml(filename):
     prices = []
     years = []
 
-
     for cd in root.findall('CD'):
         titles.append(cd.find('TITLE').text)
         artists.append(cd.find('ARTIST').text)
         countries.append(cd.find('COUNTRY').text)
         prices.append(float(cd.find('PRICE').text))
-        years.append(int(cd.find('YEAR').text))
+        years.append(cd.find('YEAR').text)
 
     return titles, artists, countries, prices, years
 
+def print_cd_catalog(xml_file):
+    try:
+        titles, artists, countries, prices, years = parse_xml_file(xml_file)
+        count =  0
+        while count < len(titles):
+            print([titles[count], artists[count], countries[count], prices[count], years[count]])
+            count += 1
+    except ET.ParseError:
+        print("Error: Invalid XML file.")
 
-def display_cd_catalog(filename):
-    titles, artists, countries, prices, years = parse_xml(filename)
+def print_catalog_stats(xml_file):
+    try:
+        titles, artists, countries, prices, years = parse_xml_file(xml_file)
+        num_items = len(titles)
+        avg_price = sum(prices) / num_items
+        print(f"Number of items: {num_items}")
+        print(f"Average price: {avg_price:.2f}")
+    except ET.ParseError:
+        print("Error: Invalid XML file.")
 
-    for i in range(len(titles)):
-        print([titles[i], artists[i], countries[i], prices[i], years[i]])
-
-
-def cd_catalog_stats(filename):
-    _, _, _, prices, _ = parse_xml(filename)
-    num_items = len(prices)
-    avg_price = sum(prices) / num_items
-
-    return [num_items, avg_price]
-
-
-def main():
-    stats = cd_catalog_stats('cd_catalog.xml')
-    print('Number of items:', stats[0])
-    print('Average price:', stats[1])
-
-
-main()
+# Example usage
+print_cd_catalog('cd_catalog.xml')
+print_catalog_stats('cd_catalog.xml')
