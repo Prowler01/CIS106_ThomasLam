@@ -7,6 +7,7 @@
 
 import xml.etree.ElementTree as ET
 
+
 def parse_xml(filename):
     tree = ET.parse(filename)
     root = tree.getroot()
@@ -17,6 +18,7 @@ def parse_xml(filename):
     prices = []
     years = []
 
+
     for cd in root.findall('CD'):
         titles.append(cd.find('TITLE').text)
         artists.append(cd.find('ARTIST').text)
@@ -26,11 +28,13 @@ def parse_xml(filename):
 
     return titles, artists, countries, prices, years
 
+
 def display_cd_catalog(filename):
     titles, artists, countries, prices, years = parse_xml(filename)
 
     for i in range(len(titles)):
         print([titles[i], artists[i], countries[i], prices[i], years[i]])
+
 
 def cd_catalog_stats(filename):
     _, _, _, prices, _ = parse_xml(filename)
@@ -39,9 +43,11 @@ def cd_catalog_stats(filename):
 
     return [num_items, avg_price]
 
+
 def main():
     stats = cd_catalog_stats('cd_catalog.xml')
     print('Number of items:', stats[0])
     print('Average price:', stats[1])
+
 
 main()
