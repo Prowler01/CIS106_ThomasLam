@@ -1,3 +1,10 @@
+# This program reads data from a CD catalog data set
+# and builds arrays for the catalog items
+# Each array contains the title, artist, country, prie, and year
+# At the bottom, the total number of items and average price is 
+# displayed
+# References: datacamp.com, stackoverflow.com
+
 import xml.etree.ElementTree as ET
 
 def parse_xml_file(xml_file):
