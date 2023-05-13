@@ -39,6 +39,9 @@ def cd_catalog_stats(filename):
 
     return [num_items, avg_price]
 
-stats = cd_catalog_stats('cd_catalog.xml')
-print('Number of items:', stats[0])
-print('Average price:', stats[1])
+def main():
+    stats = cd_catalog_stats('cd_catalog.xml')
+    print('Number of items:', stats[0])
+    print('Average price:', stats[1])
+
+main()
