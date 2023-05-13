@@ -56,9 +56,6 @@ This session went over strings which was very interesting. I learned about about
 
 This session was by far the hardest for me both in terms of programming content and maneuvering through the structure of the course. In the end it was a valuable learning experience. Using data from an external text document in my Python program was very foreign to me and was a difficult learning curve. I was confused at where to begin until I met with the professor. In the end, the solution was simpler than I had made it out to be in my head. I will learn from this moving forwards because when I encounter an alien concept in my future academic career, I'll be ready to take the time and digest the material.
 
-## Assignment 15
+## Final Project
 
-## Assignment 16
-
-
-
+This final project was by far the hardest week of the semester. Working with an XML file was a daunting task that required me to look at many online resources. There were quite a few solutions online that worked with XML libraries that required importing functions, but since that was not allowed I chose to go with what I was familiar with: strings. Much of my program was derived from solutions I had seen on the internet, so I structured my program similarly but substituted string functions whenever xml libraries were involved. This was a huge learning lesson to be because I proved to myself that I'm capable of writing complex programs. The past 2-3 weeks of this semester in particular were incredibly difficult for me. It was a significant jump in difficulty when string files and xml files got involved. Initially, I was unable to even open an XML file in my IDE. There have been many difficulties in this session that have taught me invaluable lessons.
