@@ -7,45 +7,67 @@
 
 import xml.etree.ElementTree as ET
 
-def parse_xml_file(xml_file):
-    tree = ET.parse(xml_file)
-    root = tree.getroot()
-
-    titles = []
-    artists = []
-    countries = []
-    prices = []
-    years = []
-
-    for cd in root.findall('CD'):
-        titles.append(cd.find('TITLE').text)
-        artists.append(cd.find('ARTIST').text)
-        countries.append(cd.find('COUNTRY').text)
-        prices.append(float(cd.find('PRICE').text))
-        years.append(cd.find('YEAR').text)
-
-    return titles, artists, countries, prices, years
-
-def print_cd_catalog(xml_file):
+def parse_xml(file_name):
     try:
-        titles, artists, countries, prices, years = parse_xml_file(xml_file)
-        count =  0
-        while count < len(titles):
-            print([titles[count], artists[count], countries[count], prices[count], years[count]])
-            count += 1
+        tree = ET.parse(file_name)
+        root = tree.getroot()
+        
+        titles = []
+        artists = []
+        countries = []
+        prices = []
+        years = []
+        
+        for cd in root.findall('CD'):
+            titles.append(cd.find('TITLE').text)
+            artists.append(cd.find('ARTIST').text)
+            countries.append(cd.find('COUNTRY').text)
+            prices.append(cd.find('PRICE').text)
+            years.append(cd.find('YEAR').text)
+        
+        return [titles, artists, countries, prices, years]
+    
     except ET.ParseError:
-        print("Error: Invalid XML file.")
+        print(f"Error: {file_name} is not a well-formed XML document.")
+        return None
+    except FileNotFoundError:
+        print(f"Error: {file_name} file not found.")
+        return None
+    except:
+        print(f"Error: Failed to parse {file_name}")
+        return None
 
-def print_catalog_stats(xml_file):
-    try:
-        titles, artists, countries, prices, years = parse_xml_file(xml_file)
-        num_items = len(titles)
-        avg_price = sum(prices) / num_items
-        print(f"Number of items: {num_items}")
-        print(f"Average price: {avg_price:.2f}")
-    except ET.ParseError:
-        print("Error: Invalid XML file.")
 
-# Example usage
-print_cd_catalog('cd_catalog.xml')
-print_catalog_stats('cd_catalog.xml')
+def print_catalog(file_name):
+    catalog = parse_xml(file_name)
+    
+    if catalog is None:
+        print("Error: Missing or bad data")
+        return
+    
+    titles, artists, countries, prices, years = catalog
+    
+    count = 0
+    while count < len(titles):
+        print([titles[count], artists[count], countries[count], prices[count], years[count]])
+        count += 1
+    
+    
+def get_catalog_stats(file_name):
+    catalog = parse_xml(file_name)
+    
+    if catalog is None:
+        print("Error: Missing or bad data")
+        return None
+    
+    titles, artists, countries, prices, years = catalog
+    total_items = len(titles)
+    average_price = sum(float(price) for price in prices) / total_items
+    
+    return [total_items, average_price]
+
+
+# Test the program
+print_catalog('cd_catalog.xml')
+print(get_catalog_stats('cd_catalog.xml'))
+
