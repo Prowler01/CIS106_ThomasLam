@@ -7,67 +7,55 @@
 
 import xml.etree.ElementTree as ET
 
-def parse_xml(file_name):
+def get_cd_data(filename):
     try:
-        tree = ET.parse(file_name)
-        root = tree.getroot()
-        
-        titles = []
-        artists = []
-        countries = []
-        prices = []
-        years = []
-        
-        for cd in root.findall('CD'):
-            titles.append(cd.find('TITLE').text)
-            artists.append(cd.find('ARTIST').text)
-            countries.append(cd.find('COUNTRY').text)
-            prices.append(cd.find('PRICE').text)
-            years.append(cd.find('YEAR').text)
-        
-        return [titles, artists, countries, prices, years]
-    
-    except ET.ParseError:
-        print(f"Error: {file_name} is not a well-formed XML document.")
-        return None
-    except FileNotFoundError:
-        print(f"Error: {file_name} file not found.")
-        return None
+        tree = ET.parse(filename)
     except:
-        print(f"Error: Failed to parse {file_name}")
-        return None
-
-
-def print_catalog(file_name):
-    catalog = parse_xml(file_name)
-    
-    if catalog is None:
-        print("Error: Missing or bad data")
-        return
-    
-    titles, artists, countries, prices, years = catalog
-    
-    count = 0
-    while count < len(titles):
-        print([titles[count], artists[count], countries[count], prices[count], years[count]])
-        count += 1
-    
-    
-def get_catalog_stats(file_name):
-    catalog = parse_xml(file_name)
-    
-    if catalog is None:
         print("Error: Missing or bad data")
         return None
     
-    titles, artists, countries, prices, years = catalog
-    total_items = len(titles)
-    average_price = sum(float(price) for price in prices) / total_items
-    
-    return [total_items, average_price]
+    root = tree.getroot()
 
+    titles = []
+    artists = []
+    countries = []
+    prices = []
+    years = []
 
-# Test the program
-print_catalog('cd_catalog.xml')
-print(get_catalog_stats('cd_catalog.xml'))
+    for cd in root.findall('CD'):
+        titles.append(cd.find('TITLE').text)
+        artists.append(cd.find('ARTIST').text)
+        countries.append(cd.find('COUNTRY').text)
+        prices.append(cd.find('PRICE').text)
+        years.append(cd.find('YEAR').text)
 
+    cd_data = []
+
+    for i in range(len(titles)):
+        cd_info = titles[i] + " - " + artists[i] + " - " + countries[i] + " - " + prices[i] + " - " + years[i]
+        cd_data.append(cd_info)
+
+    return cd_data
+
+def get_cd_stats(cd_data):
+    num_cds = len(cd_data)
+    total_price = 0
+
+    for cd in cd_data:
+        price = float(cd.split(" - ")[3])
+        total_price += price
+
+    avg_price = total_price / num_cds
+
+    return [num_cds, avg_price]
+
+filename = 'cd_catalog.xml'
+cd_data = get_cd_data(filename)
+
+if cd_data:
+    for cd_info in cd_data:
+        print(cd_info)
+
+    cd_stats = get_cd_stats(cd_data)
+    print("\nTotal CDs: " + str(cd_stats[0]))
+    print("Average price: " + "{:.2f}".format(cd_stats[1]))
