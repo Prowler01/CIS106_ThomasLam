@@ -85,16 +85,14 @@ def calculate_total(xml_file):
 
 # Display arrays
 def display_result(xml_file):
-    title_array = read_file(xml_file)
-    artist_array = read_file(xml_file)
-    country_array = read_file(xml_file)
-    price_array = read_file(xml_file)
-    year_array = read_file(xml_file)
+    title_array, artist_array, country_array, price_array, year_array = read_file(xml_file)
     if len(title_array) == 0:
         print("Error: Missing or bad data")
         return
     for i in range(len(title_array)):
         print(f"{title_array[i]} - {artist_array[i]} - {country_array[i]} - {price_array[i]} - {year_array[i]}")
+    print("Number of items: " + str(len(title_array)))
+
 
 def display_result2(xml_file):
     title_array, artist_array, country_array, price_array, year_array = read_file(xml_file)
@@ -103,8 +101,9 @@ def display_result2(xml_file):
         return
     num_items = len(title_array)
     avg_price = sum([float(price) for price in price_array]) / num_items
-    print("Average price:" + str(num_items))
-    print("Total price: " + str(avg_price))
+    print("Number of items: " + str(num_items))
+    print("Average price: " + str(round(avg_price, 2)))
+
 
 
 
