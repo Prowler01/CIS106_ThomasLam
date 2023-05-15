@@ -90,6 +90,7 @@ def calculate_total(xml_file):
 
 # Display arrays
 
+
 def display_result(xml_file):
     title_array, artist_array, \
     country_array, price_array, \
