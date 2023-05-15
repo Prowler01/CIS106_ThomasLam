@@ -13,6 +13,7 @@ import sys
 
 # Need a function to read the XML file and return arrays
 # of all the titles, artists, countries, prices, and years
+
 def read_file(xml_file):
     with open(xml_file, 'r') as file:
         data = file.read()
@@ -49,7 +50,7 @@ def read_file(xml_file):
         artist_array.append(artist)
         
         country_count = catalog.find(country1)
-        country = catalog[country_count + len(country1): catalog.find(country2)]
+        country = catalog[country_count + len(country1):catalog.find(country2)]
         country_array.append(country)
         
         price_count = catalog.find(price1)
@@ -69,6 +70,7 @@ def read_file(xml_file):
         
     return title_array, artist_array, country_array, price_array, year_array
         
+
 # Find the average price
 def calculate_average(xml_file):
     title_array, artist_array, country_array, price_array, year_array = read_file(xml_file)
@@ -110,12 +112,8 @@ def display_result2(xml_file):
 # Main function and call
 def main():
     xml_file = "cd_catalog.xml"
-    #read = read_file(xml_file)
-    #average = calculate_average(xml_file)
-    #total = calculate_total(xml_file)
     display_result(xml_file)
     display_result2(xml_file)
-    
     
     
 main()
