@@ -75,8 +75,8 @@ def read_file(xml_file):
 # Find the average price
 def calculate_average(xml_file):
     title_array, artist_array, \
-        country_array, price_array, \
-            year_array = read_file(xml_file)
+    country_array, price_array, \
+    year_array = read_file(xml_file)
     items = len(title_array)
     average = sum([float(price) for price in price_array]) / items
     return average
