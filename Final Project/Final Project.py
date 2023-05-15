@@ -7,7 +7,7 @@
 # References: datacamp.com, stackoverflow.com
 # References: educba.com, guru99.com, nanonets.com
 # References: realpython.com, edureka.co, stackabuse.com
-# References: superfastpython.com
+# References: superfastpython.com, https://developer.rhino3d.com/
 
 import sys
 
@@ -74,8 +74,9 @@ def read_file(xml_file):
 
 # Find the average price
 def calculate_average(xml_file):
-    title_array, artist_array, country_array = read_file(xml_file)
-    price_array, year_array = read_file(xml_file)
+    title_array, artist_array, \
+    country_array, price_array, \
+    year_array = read_file(xml_file)
     items = len(title_array)
     average = sum([float(price) for price in price_array]) / items
     return average
@@ -90,13 +91,15 @@ def calculate_total(xml_file):
 # Display arrays
 
 def display_result(xml_file):
-    title_array, artist_array, country_array, price_array, year_array = read_file(xml_file)
+    title_array, artist_array, \
+    country_array, price_array, \
+    year_array = read_file(xml_file)
     if len(title_array) == 0:
         print("Error: Missing or bad data")
         return
     for i in range(len(title_array)):
         print(f"{title_array[i]} - {artist_array[i]} - {country_array[i]} - {price_array[i]} - {year_array[i]}")
-    print("Number of items: " + str(len(title_array)))
+    
 
 
 def display_result2(xml_file):
