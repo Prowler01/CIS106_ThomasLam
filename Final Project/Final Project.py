@@ -14,6 +14,7 @@ import sys
 # Need a function to read the XML file and return arrays
 # of all the titles, artists, countries, prices, and years
 
+
 def read_file(xml_file):
     with open(xml_file, 'r') as file:
         data = file.read()
@@ -73,7 +74,8 @@ def read_file(xml_file):
 
 # Find the average price
 def calculate_average(xml_file):
-    title_array, artist_array, country_array, price_array, year_array = read_file(xml_file)
+    title_array, artist_array, country_array = read_file(xml_file)
+    price_array, year_array = read_file(xml_file)
     items = len(title_array)
     average = sum([float(price) for price in price_array]) / items
     return average
@@ -105,8 +107,6 @@ def display_result2(xml_file):
     avg_price = sum([float(price) for price in price_array]) / num_items
     print("Number of items: " + str(num_items))
     print("Average price: " + str(round(avg_price, 2)))
-
-
 
 
 # Main function and call
