@@ -88,6 +88,7 @@ def calculate_total(xml_file):
     return total
 
 # Display arrays
+
 def display_result(xml_file):
     title_array, artist_array, country_array, price_array, year_array = read_file(xml_file)
     if len(title_array) == 0:
